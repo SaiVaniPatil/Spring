@@ -1,0 +1,10 @@
+package com.nerchuko.first;
+
+public class Alien {
+	
+	public void code()
+	{
+		System.out.println( "started spring coding...");
+	}
+
+}
