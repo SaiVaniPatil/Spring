@@ -1389,3 +1389,7 @@
 2023-04-20 16:25:38,100 [Worker-128: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
 2023-04-20 16:25:38,106 [Worker-128: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-04-20 16:25:38,109 [Worker-128: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-04-20 16:25:38,111 [Worker-128: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-04-20 16:25:38,112 [Worker-128: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sai personal\software\Spring\Springboot\SpringDemo\src\test\resources
+2023-04-20 16:29:00,656 [Worker-131: Building] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
+2023-04-20 16:29:00,662 [Worker-131: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
