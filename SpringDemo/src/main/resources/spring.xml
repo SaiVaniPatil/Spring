@@ -7,7 +7,11 @@
 
 
 
-    <bean id="alien" class="com.nerchuko.SpringDemo.Alien"></bean>
+ <!--  <bean id="alien" class="com.nerchuko.SpringDemo.Alien"></bean> is same as 
+ <bean id="alien" class="com.nerchuko.SpringDemo.Alien" scope="singleton"></bean> -->
+ 
+ 
+  <bean id="alien" class="com.nerchuko.SpringDemo.Alien" scope="prototype" ></bean>
 
 
 
