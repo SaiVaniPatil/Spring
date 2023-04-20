@@ -7,7 +7,7 @@
 
 
 
-  <bean id="alien" class="com.nerchuko.SpringDemo.Alien" autowire="byName">
+  <bean id="alien" class="com.nerchuko.SpringDemo.Alien" autowire="byType">
 	<property name="age" value="10"></property>  <!--  =assign values for primitive types-->
 		 
 	 <!-- <property name="comp" ref="comp"></property>  =assign values for reference types-->
@@ -24,7 +24,7 @@ above is same as
   <bean id="alien" class="com.nerchuko.SpringDemo.Alien" scope="prototype" ></bean>   = for multiple istances-->
 
 
-<bean id="comp" class="com.nerchuko.SpringDemo.Laptop"></bean>
+<!-- <bean id="comp" class="com.nerchuko.SpringDemo.Laptop"></bean>-->
 
 
 <!-- <bean id="laptop" class="com.nerchuko.SpringDemo.Laptop"></bean>-->
