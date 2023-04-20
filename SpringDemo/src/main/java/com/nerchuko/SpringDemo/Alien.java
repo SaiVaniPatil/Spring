@@ -1,6 +1,9 @@
 package com.nerchuko.SpringDemo;
 
 public class Alien {
+	
+	
+	int age;
 
 	public void code()
 	{

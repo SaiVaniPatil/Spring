@@ -1519,3 +1519,9 @@ org.apache.hc.client5.http.HttpResponseException: status code: 400, reason phras
 
 !ENTRY org.eclipse.m2e.logback.appender 4 0 2023-04-20 14:59:52.560
 !MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2023-04-20 15:36:08.611
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2023-04-20 15:36:14.054
+!MESSAGE Unexpected URLConnection defaultUseCaches enabled
