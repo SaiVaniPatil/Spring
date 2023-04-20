@@ -3,31 +3,31 @@ package com.nerchuko.SpringDemo;
 public class Alien {
 	
 	
-	public Alien(int age, Laptop laptop) {
-		System.out.println("Constructing Alien..with age... and laptop.");
-		this.age = age;
-		this.laptop = laptop;
-	}
-
-	public Alien(Laptop laptop) {
-		System.out.println("Constructing Alien..with laptop...");
-		this.laptop = laptop;
-	}
-
-	public Alien(int age) {	
-		System.out.println("Constructing Alien..with age...");
-		this.age = age;
-	}
+//	public Alien(int age, comp comp) {
+//		System.out.println("Constructing Alien..with age... and comp.");
+//		this.age = age;
+//		this.comp = comp;
+//	}
+//
+//	public Alien(comp comp) {
+//		System.out.println("Constructing Alien..with comp...");
+//		this.comp = comp;
+//	}
+//
+//	public Alien(int age) {	
+//		System.out.println("Constructing Alien..with age...");
+//		this.age = age;
+//	}
 
 	private int age;
-	private Laptop laptop;
+	private Computer comp;
 	
-	public Laptop getLaptop() {
-		return laptop;
+	public Computer getcomp() {
+		return comp;
 	}
 
-	public void setLaptop(Laptop laptop) {
-		this.laptop = laptop;
+	public void setcomp(Computer comp) {
+		this.comp = comp;
 	}
 
 	public int getAge() {
@@ -46,7 +46,7 @@ public class Alien {
 	public void code()
 	{
 		System.out.println("I am coding 2 ...");
-		laptop.compile();
+		comp.compile();
 	}
 	
 }

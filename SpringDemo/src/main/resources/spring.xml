@@ -7,12 +7,13 @@
 
 
 
-  <bean id="alien" class="com.nerchuko.SpringDemo.Alien">
-	 <!-- <property name="age" value="10"></property> =assign values for primitive types-->
-		 <constructor-arg value="22"></constructor-arg>
-	  <!-- <property name="laptop" ref="laptop"></property> =assign values for reference types-->
+  <bean id="alien" class="com.nerchuko.SpringDemo.Alien" autowire="byName">
+	<property name="age" value="10"></property>  <!--  =assign values for primitive types-->
+		 
+	 <!-- <property name="comp" ref="comp"></property>  =assign values for reference types-->
 	  
-	   <constructor-arg ref="laptop"></constructor-arg>
+	  <!--  <constructor-arg value="22"></constructor-arg> = to call constuctors with params-->
+	   <!-- <constructor-arg ref="laptop"></constructor-arg> = to call constuctors with params-->
 	</bean>
  
  <!-- 
@@ -23,7 +24,11 @@ above is same as
   <bean id="alien" class="com.nerchuko.SpringDemo.Alien" scope="prototype" ></bean>   = for multiple istances-->
 
 
+<bean id="comp" class="com.nerchuko.SpringDemo.Laptop"></bean>
 
- <bean id="laptop" class="com.nerchuko.SpringDemo.Laptop"></bean>
+
+<!-- <bean id="laptop" class="com.nerchuko.SpringDemo.Laptop"></bean>-->
+ 
+ <bean id="desktop" class="com.nerchuko.SpringDemo.Desktop"></bean>
 
 </beans>

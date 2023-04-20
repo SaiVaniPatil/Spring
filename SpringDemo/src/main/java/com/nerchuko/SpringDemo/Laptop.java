@@ -1,10 +1,10 @@
 package com.nerchuko.SpringDemo;
 
-public class Laptop {
+public class Laptop implements Computer {
 	
 	public void compile()
 	{
-		System.out.println("Code compiled....");
+		System.out.println("Laptop Code compiled....");
 	}
 
 }
