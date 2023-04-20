@@ -23,8 +23,6 @@ public class App
     	obj.code();
        // System.out.println( "Hello World!" );
     	
-    	System.out.println(obj.getAge());
-    	
 
     }
 }
