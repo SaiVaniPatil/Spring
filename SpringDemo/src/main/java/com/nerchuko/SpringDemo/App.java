@@ -16,18 +16,15 @@ public class App
     	
     	//BeanFactory factory = new XmlBeanFactory --deprecated cannot use it
     			
-    			ApplicationContext context= new ClassPathXmlApplicationContext("spring.xml");
-    	BeanFactory factory = (BeanFactory) context;
+    			ApplicationContext factory= new ClassPathXmlApplicationContext("spring.xml");
+
     	Alien obj = (Alien)factory.getBean("alien");
-    	obj.age=15;
+    	//obj.age=15;
     	obj.code();
        // System.out.println( "Hello World!" );
     	
-    	System.out.println(obj.age);
+    	System.out.println(obj.getAge());
     	
-    	
-    	Alien obj1 = (Alien)factory.getBean("alien");
-    	obj1.code();
-    	System.out.println(obj1.age);
+
     }
 }

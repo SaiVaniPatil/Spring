@@ -7,12 +7,20 @@
 
 
 
- <!--  <bean id="alien" class="com.nerchuko.SpringDemo.Alien"></bean> is same as 
- <bean id="alien" class="com.nerchuko.SpringDemo.Alien" scope="singleton"></bean> -->
+  <bean id="alien" class="com.nerchuko.SpringDemo.Alien">
+	  <property name="age" value="10"></property> <!--assign values for primitive types-->
+	  <property name="laptop" ref="laptop"></property> <!--assign values for reference types-->
+	</bean>
+ 
+ <!-- 
+above is same as 
+ <bean id="alien" class="com.nerchuko.SpringDemo.Alien" scope="singleton"></bean> = when only one instance is maintained
  
  
-  <bean id="alien" class="com.nerchuko.SpringDemo.Alien" scope="prototype" ></bean>
+  <bean id="alien" class="com.nerchuko.SpringDemo.Alien" scope="prototype" ></bean>   = for multiple istances-->
 
 
+
+ <bean id="laptop" class="com.nerchuko.SpringDemo.Laptop"></bean>
 
 </beans>
