@@ -10,7 +10,7 @@ pageEncoding="UTF-8"%>
 <body>
 		Welcome to nerchuko
 		
-		<form action="addAlienV2">
+		<form action="addAlienV2" method="post">
 		Enter your id <input type="text" name ="id"/>
 		<br>
 		Enter your name <input type="text" name="name"/>

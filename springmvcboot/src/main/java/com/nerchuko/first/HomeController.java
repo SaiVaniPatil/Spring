@@ -2,8 +2,11 @@ package com.nerchuko.first;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.nerchuko.first.model.Alien;
@@ -58,12 +61,43 @@ public class HomeController
 		
 	}
 	
-	@RequestMapping("addAlienV2")
+//	@RequestMapping("addAlienV2")
+//	public String addNum(@ModelAttribute("a1") Alien a)
+//	{
+//				
+//		return "alien";
+//		
+//	}
+	
+	//to support only get operation
+//	@RequestMapping(value="addAlienV2", method=RequestMethod.GET)
+//	public String addNum(@ModelAttribute("a1") Alien a)
+//	{
+//				
+//		return "alien";
+//		
+//	}
+	
+	
+	//only supports get method
+//	@GetMapping(value="addAlienV2")
+//	public String addNum(@ModelAttribute("a1") Alien a)
+//	{
+//				
+//		return "alien";
+//		
+//	}
+//	
+	
+	//only supports post method
+	@PostMapping(value="addAlienV2")
 	public String addNum(@ModelAttribute("a1") Alien a)
 	{
 				
 		return "alien";
 		
 	}
+
+
 
 }
