@@ -15,7 +15,7 @@ public class HomeController
 	public String home()
 	{
 		
-		return "index.jsp";
+		return "index";
 		//System.out.println("home page requested");
 	}
 	
@@ -29,7 +29,7 @@ public class HomeController
 		
 		ModelAndView mv = new ModelAndView();
 		
-		mv.setViewName("result.jsp");
+		mv.setViewName("result");
 		
 		int num3 = i+j;
 		
