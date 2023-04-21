@@ -1801,3 +1801,5 @@
 2023-04-21 11:00:03,007 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sai personal\software\Spring\Springboot\springmvcboot\src\test\resources
 2023-04-21 11:00:21,921 [Worker-37: Launching springmvcboot - SpringmvcbootApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2023-04-21 11:00:21,956 [Worker-37: Launching springmvcboot - SpringmvcbootApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-04-21 11:00:21,959 [Worker-37: Launching springmvcboot - SpringmvcbootApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\sai personal\software\Spring\Springboot\springmvcboot\src\test\resources
+2023-04-21 11:04:15,706 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
