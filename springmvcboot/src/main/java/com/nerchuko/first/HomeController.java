@@ -3,6 +3,7 @@ package com.nerchuko.first;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,6 +19,9 @@ import com.nerchuko.first.model.Alien;
 public class HomeController
 {
 	//this will be called first before any request mapping call
+	
+	@Autowired
+	AlienRepo repo;
 	
 	@ModelAttribute
 	public void modelData(Model m)
@@ -113,6 +117,18 @@ public class HomeController
 		List<Alien> aliens = Arrays.asList(a1,a2,a3);
 		
 		m.addAttribute("result", aliens);
+		
+		return "showAliens";
+		
+	}
+	
+	
+	@GetMapping(value="getAliensJPA")
+	public String getAliensJPA(Model m)
+	{
+	
+		
+		m.addAttribute("result", repo.findAll());
 		
 		return "showAliens";
 		

@@ -1,28 +1,41 @@
 package com.nerchuko.first.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Id;
+
+@Entity
 public class Alien {
 	@Override
 	public String toString() {
-		return "Alien [id=" + id + ", name=" + name + "]";
+		return "Alien [aid=" + aid + ", aname=" + aname + "]";
 	}
-	public Alien(int id, String name) {
+	
+	
+	public Alien()
+	{
 		
-		this.id = id;
-		this.name = name;
 	}
-	private int id;
-	private String name;
-	public int getId() {
-		return id;
+	
+	public Alien(int aid, String aname) {
+		
+		this.aid = aid;
+		this.aname = aname;
 	}
-	public void setId(int id) {
-		this.id = id;
+	@Id
+	private int aid;
+	private String aname;
+	public int getAid() {
+		return aid;
 	}
-	public String getName() {
-		return name;
+	public void setAid(int aid) {
+		this.aid = aid;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public String getAname() {
+		return aname;
+	}
+	public void setAname(String aname) {
+		this.aname = aname;
 	}
 	
 
