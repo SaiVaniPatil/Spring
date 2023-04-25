@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -31,6 +32,18 @@ public class AlienController {
 		
 	}
 	
+	
+	@GetMapping(path = "aliensV2", produces = "application/xml")	
+	public List<Alien> getAliensV2()
+	{
+		
+		List<Alien> aliens = repo.findAll();
+			
+		
+		return aliens;
+		
+	}
+	
 	@GetMapping("aliens/{aid}")	
 	public Alien getAlien(@PathVariable("aid") int aid)
 	{
@@ -38,6 +51,15 @@ public class AlienController {
 		
 		return alien;
 	}
+	
+	@PostMapping("aliens")	
+	public Alien addAlien( Alien alien)
+	{
+		repo.save(alien);
+		
+		return alien;
+	}
+
 
 
 }
