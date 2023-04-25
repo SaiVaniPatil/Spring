@@ -135,3 +135,45 @@ java.lang.ArithmeticException: / by zero
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+2023-04-25T14:57:37.335+02:00  INFO 22056 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-04-25T14:57:37.348+02:00  INFO 22056 --- [RMI TCP Connection(12)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-25T14:57:37.350+02:00  INFO 22056 --- [RMI TCP Connection(12)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-25T14:57:37.356+02:00  INFO 22056 --- [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T14:57:37.357+02:00  INFO 22056 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-25T14:57:37.365+02:00  INFO 22056 --- [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-25T14:57:39.244+02:00  INFO 12656 --- [main] c.n.first.SpringmvcbootApplication       : Starting SpringmvcbootApplication using Java 17.0.6 with PID 12656 (C:\sai personal\software\Spring\Springboot\springmvcboot\target\classes started by Sai Vani in C:\sai personal\software\Spring\Springboot\springmvcboot)
+2023-04-25T14:57:39.248+02:00  INFO 12656 --- [main] c.n.first.SpringmvcbootApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-04-25T14:57:39.963+02:00  INFO 12656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25T14:57:40.025+02:00  INFO 12656 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 1 JPA repository interfaces.
+2023-04-25T14:57:40.605+02:00  INFO 12656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-04-25T14:57:40.615+02:00  INFO 12656 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-25T14:57:40.615+02:00  INFO 12656 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-04-25T14:57:40.841+02:00  INFO 12656 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-04-25T14:57:40.845+02:00  INFO 12656 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-25T14:57:40.846+02:00  INFO 12656 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1552 ms
+2023-04-25T14:57:40.985+02:00  INFO 12656 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-25T14:57:41.304+02:00  INFO 12656 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@423f8a73
+2023-04-25T14:57:41.307+02:00  INFO 12656 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-25T14:57:41.353+02:00  INFO 12656 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25T14:57:41.410+02:00  INFO 12656 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-04-25T14:57:41.810+02:00  WARN 12656 --- [main] org.hibernate.dialect.Dialect            : HHH000511: The 5.0.0 version for [org.hibernate.dialect.MySQL5Dialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 5.7.0. Check the community dialects project for available legacy versions.
+2023-04-25T14:57:41.813+02:00  INFO 12656 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-04-25T14:57:41.817+02:00  WARN 12656 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL5Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-04-25T14:57:42.809+02:00  INFO 12656 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25T14:57:42.826+02:00  INFO 12656 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T14:57:43.435+02:00  WARN 12656 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-25T14:57:43.601+02:00  INFO 12656 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-04-25T14:57:43.811+02:00  INFO 12656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-25T14:57:43.824+02:00  INFO 12656 --- [main] c.n.first.SpringmvcbootApplication       : Started SpringmvcbootApplication in 4.954 seconds (process running for 5.585)
+2023-04-25T14:57:44.976+02:00  INFO 12656 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25T14:57:44.977+02:00  INFO 12656 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-25T14:57:44.978+02:00  INFO 12656 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-25T14:57:45.076+02:00  INFO 12656 --- [http-nio-8080-exec-2] com.nerchuko.first.LoggingAspect         : getAliens method called using logger
+2023-04-25T14:57:45.264+02:00  INFO 12656 --- [http-nio-8080-exec-2] com.nerchuko.first.LoggingAspect         : logAfterReturning - getAliens method completed  using logger
+2023-04-25T14:57:45.265+02:00  INFO 12656 --- [http-nio-8080-exec-2] com.nerchuko.first.LoggingAspect         : logAfter - getAliens method completed  using logger
+2023-04-25T14:57:55.618+02:00  INFO 12656 --- [RMI TCP Connection(5)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-04-25T14:57:55.632+02:00  INFO 12656 --- [RMI TCP Connection(5)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-04-25T14:57:55.633+02:00  INFO 12656 --- [RMI TCP Connection(5)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-25T14:57:55.640+02:00  INFO 12656 --- [RMI TCP Connection(5)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25T14:57:55.642+02:00  INFO 12656 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-25T14:57:55.652+02:00  INFO 12656 --- [RMI TCP Connection(5)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

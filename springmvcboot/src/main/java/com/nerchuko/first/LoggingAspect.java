@@ -1,6 +1,8 @@
 package com.nerchuko.first;
 
 import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.slf4j.Logger;
@@ -26,8 +28,25 @@ public class LoggingAspect {
 	{
 		//System.out.println("getAliens method called");
 		
-		LOGGER.info("getAliens method completed  using logger");
+		LOGGER.info("logAfter - getAliens method completed  using logger");
 	}
+	
+	@AfterReturning("execution(public java.util.List<com.nerchuko.first.model.Alien> com.nerchuko.first.AlienController.getAliens())")
+	public void logAfterReturning()
+	{
+		//System.out.println("getAliens method called");
+		
+		LOGGER.info("logAfterReturning - getAliens method completed  using logger");
+	}
+	
+	@AfterThrowing("execution(public java.util.List<com.nerchuko.first.model.Alien> com.nerchuko.first.AlienController.getAliens())")
+	public void logAfterThrowing()
+	{
+		//System.out.println("getAliens method called");
+		
+		LOGGER.info("logAfterThrowing - getAliens method completed  using logger");
+	}
+	
 	
 	
 	
