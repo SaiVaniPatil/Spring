@@ -9,10 +9,7 @@ pageEncoding="UTF-8"%>
 </head>
 <body>
 
-Welcome to nerchuko
-		
-		Result is : ${alien}
-		
+Alien with id {aid} has been deleted
 		
 </body>
 </html>

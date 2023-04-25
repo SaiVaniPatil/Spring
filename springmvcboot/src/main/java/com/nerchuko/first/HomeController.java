@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -131,6 +132,51 @@ public class HomeController
 		m.addAttribute("result", repo.findAll());
 		
 		return "showAliens";
+		
+	}
+	
+	@GetMapping(value="getAlien")
+	public String getAlien(@RequestParam int aid,Model m)
+	{
+	
+		
+		m.addAttribute("a1", repo.findById(aid));
+		
+		return "alien";
+		
+	}
+	
+	@PostMapping(value="addAlien")
+	public String addAlien(@ModelAttribute Alien result)
+	{
+	
+		repo.save(result);		
+		
+		return "showAliens";
+		
+	}
+	
+	@PostMapping(value="deleteAlien")
+	public String deleteAlien(@RequestParam int aid, Model m)
+	{
+		m.addAttribute("aid",aid);
+		
+		repo.deleteById(aid);
+		
+		return "deleteAlien";
+		
+	}
+	
+	@GetMapping(value="getAlienbyName")
+	public String getAlienbyName(@RequestParam String aName,Model m)
+	{
+	
+		
+		//m.addAttribute("a1", repo.findByAname(aName));
+		
+		m.addAttribute("a1", repo.find(aName));
+		
+		return "alien";
 		
 	}
 

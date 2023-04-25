@@ -10,11 +10,35 @@ pageEncoding="UTF-8"%>
 <body>
 		Welcome to nerchuko
 		
-		<form action="addAlienV2" method="post">
-		Enter your id <input type="text" name ="id"/>
+		<form action="addAlien" method="post">
+		Enter your id <input type="text" name ="aid"/>
 		<br>
-		Enter your name <input type="text" name="name"/>
+		Enter your name <input type="text" name="aname"/>
 		<input type="submit">
 		</form>
+
+		<br>
+		<br>
+------------------------------------------------------------------
+		<form action="getAlien" method="get">
+			Enter your id <input type="text" name ="aid"/>
+			<br>
+			<input type="submit" name="add">
+			</form>
+
+			-----------------------------------------------------------------
+		<form action="deleteAlien" method="post">
+			Enter your id <input type="text" name ="aid"/>
+			<br>
+			<input type="submit" name="delete">
+			</form>
+
+			-----------------------------------------------------------------
+			<form action="getAlienbyName" method="get">
+				Enter your name <input type="text" name ="aName"/>
+				<br>
+				<input type="submit" name="getAlienByName">
+				</form>
+	</body>
 </body>
 </html>
