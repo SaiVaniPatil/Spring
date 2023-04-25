@@ -7,30 +7,36 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.nerchuko.first.model.Alien;
 
-@Controller
+@RestController
 public class AlienController {
 	
 	@Autowired
 	AlienRepo repo;
 	
-	@GetMapping(value="aliens")
-	public String getAliens()
+	@GetMapping("aliens")	
+	public List<Alien> getAliens()
 	{
 		
-		Alien a1 = new Alien(1,"Alpha");
-		Alien a2 = new Alien(2,"Beta");
-		Alien a3 = new Alien(3,"theta");
-				
+		List<Alien> aliens = repo.findAll();
+			
 		
-		List<Alien> aliens = Arrays.asList(a1,a2,a3);
+		return aliens;
 		
+	}
 	
+	@GetMapping("aliens/{aid}")	
+	public Alien getAlien(@PathVariable("aid") int aid)
+	{
+		Alien alien = repo.findById(aid).orElse(new Alien(0,""));
 		
-		return aliens.toString();
-		
+		return alien;
 	}
 
 
