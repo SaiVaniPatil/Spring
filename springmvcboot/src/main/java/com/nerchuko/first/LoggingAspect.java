@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class LoggingAspect {
 	
-	@Before("execution(public * com.nerchuko.first.AlienController.getAliens())")
+	@Before("execution(public java.util.List<com.nerchuko.first.model.Alien> com.nerchuko.first.AlienController.getAliens())")
 	public void log()
 	{
 		System.out.println("getAliens method called");
